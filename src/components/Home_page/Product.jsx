@@ -1,6 +1,6 @@
 import React from 'react'
-import "../styles/product.css"
-import { product } from "../constants/data"
+import "../../styles/product.css"
+import { product } from "../../constants/data"
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 
@@ -9,7 +9,7 @@ function Product() {
         <>
             {/* Product Start */}
             <div className='product_header'>
-                <h2>POPULAR PRODUCTS</h2>
+                <h2>POPULAR PRODUCT</h2>
             </div>
             <div className='product_wrapper'>
                 <div className='product_container'>
