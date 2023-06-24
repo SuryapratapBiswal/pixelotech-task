@@ -1,5 +1,6 @@
 import React from 'react'
-import "../styles/header.css"
+import "../../styles/header.css"
+import { Link } from "react-router-dom"
 import StarIcon from '@mui/icons-material/Star';
 
 function Header() {
@@ -13,18 +14,18 @@ function Header() {
                     <p className='dommy_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor morbi velit</p>
                     <p className='dommy_text'> turpis et dolor sit morbi odio id. Aliquam ultricies tortor ac.</p>
                     {/* <button id='shop_now_btn'>Shop Now</button> */}
-                    
+
                     <div className='mainbox'>
                         <div className="box">
-                            <button id='shop_now_btn'>Shop Now</button>
+                            <Link to='/shop'><button id='shop_now_btn'>Shop Now</button></Link>
                         </div>
                         <div className="box">
                             <img className='arrow' src="/assets/mask_group.png" alt="" />
                         </div>
                         <div className="box">
                             <div className='review'>
-                                <p style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
-                                    <span id='number_rating'>4.3</span> 
+                                <p style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+                                    <span id='number_rating'>4.3</span>
                                     <StarIcon style={{ color: "#A61473" }} fontSize='small' />
                                     <StarIcon style={{ color: "#A61473" }} fontSize='small' />
                                     <StarIcon style={{ color: "#A61473" }} fontSize='small' />
