@@ -26,6 +26,8 @@ h2 {
 .product_container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5rem;
 }
 
@@ -35,11 +37,11 @@ h2 {
     margin: 0 10px;
     min-width: 277px;
     min-height: 203px;
-    border:0.93px solid #0000;
+    border: 0.93px solid #0000;
     border-radius: 20px 20px 0px 0px;
     background:
-        linear-gradient(#f5f8ff,#f8f8f8) padding-box,
-        linear-gradient(143deg, rgba(225,66,170,1) 0%, rgba(254,254,254,1) 50%, rgba(115,255,255,1) 100%) border-box;
+        linear-gradient(#f5f8ff, #f8f8f8) padding-box,
+        linear-gradient(143deg, rgba(225, 66, 170, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(115, 255, 255, 1) 100%) border-box;
 }
 
 .product_header {
@@ -123,7 +125,7 @@ h2 {
     font-weight: 500;
 }
 
-#buynow{
+#buynow {
     background-color: #fff;
     padding: 10px 10px;
     color: #677DA8;
@@ -136,20 +138,23 @@ h2 {
     z-index: 99;
 }
 
-@media only screen and (max-width: 768px) { 
-    .product_header{
+@media only screen and (max-width: 768px) {
+    .product_header {
         text-align: center;
         margin: 0;
     }
-    .product_header h2{
+
+    .product_header h2 {
         font-size: 20px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
     .product_container {
         justify-content: center;
     }
-    .main_card{
+
+    .main_card {
         margin-bottom: 3rem;
     }
 }
